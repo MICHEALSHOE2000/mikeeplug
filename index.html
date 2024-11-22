@@ -3,73 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Business Name</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>MIKEE GADGET PLUG</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #007bff, #00c6ff);
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #004085;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background: #0069d9;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 1200px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .product {
+      flex: 1 1 calc(20% - 20px);
+      max-width: 200px;
+      margin: 10px;
+      text-align: center;
+      background: #f0f0f0;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .product h3 {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+    .cta-buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .cta-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .cta-buttons a:hover {
+      background: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #004085;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product {
+        flex: 1 1 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <h1>Your Business Name</h1>
-      <p>Affordable, Reliable UK-Used Phones in Ogbomoso</p>
-    </div>
+  <header>
+    <h1>MIKEE GADGET PLUG</h1>
+    <p>Your trusted hub for quality UK-used phones in Ogbomoso!</p>
   </header>
-
-  <nav class="navbar">
-    <div class="container">
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#offers">Offers</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#products">Products</a>
+    <a href="#offers">Offers</a>
+    <a href="#contact">Contact</a>
   </nav>
-
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>We specialize in providing premium UK-used iPhones with FREE accessories and a 30-day guarantee.</p>
-    </div>
+  
+  <section id="home">
+    <h2>Welcome to MIKEE GADGET PLUG</h2>
+    <p>Get the latest UK-used phones at unbeatable prices, delivered with quality and trust. We make owning the best gadgets easy and affordable.</p>
   </section>
 
-  <section id="products" class="products">
-    <div class="container">
-      <h2>Our Products</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>iPhone 11</h3>
-          <p>Sleek, powerful, and affordable.</p>
-        </div>
-        <div class="card">
-          <h3>iPhone XR</h3>
-          <p>Perfect for students and young professionals.</p>
-        </div>
-        <div class="card">
-          <h3>iPhone X</h3>
-          <p>Classic design, exceptional performance.</p>
-        </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Located at Shop 2, Opposite Amco, Beside Alata Milk & Honey, Oja Agbada Area, Ogbomoso, we specialize in offering top-quality UK-used phones that suit your style and budget.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="phone1.jpg" alt="iPhone 11">
+        <h3>iPhone 11</h3>
+        <p>Price: ₦250,000</p>
+      </div>
+      <div class="product">
+        <img src="phone2.jpg" alt="Samsung S10">
+        <h3>Samsung S10</h3>
+        <p>Price: ₦180,000</p>
+      </div>
+      <div class="product">
+        <img src="phone3.jpg" alt="iPhone X">
+        <h3>iPhone X</h3>
+        <p>Price: ₦200,000</p>
+      </div>
+      <div class="product">
+        <img src="phone4.jpg" alt="iPhone 8 Plus">
+        <h3>iPhone 8 Plus</h3>
+        <p>Price: ₦150,000</p>
+      </div>
+      <div class="product">
+        <img src="phone5.jpg" alt="Samsung A50">
+        <h3>Samsung A50</h3>
+        <p>Price: ₦90,000</p>
       </div>
     </div>
   </section>
 
-  <section id="offers" class="offers">
-    <div class="container">
-      <h2>Special Offers</h2>
-      <p>Enjoy FREE accessories and our unbeatable 30-day guarantee on every purchase!</p>
+  <section id="offers">
+    <h2>Current Offers</h2>
+    <p>Get FREE screen protectors and cases for all purchases this week!</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Call us at <strong>+234 708 686 5133</strong></p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/2347086865133" target="_blank">WhatsApp Us</a>
+      <a href="#about">Visit Shop</a>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Visit us in Ogbomoso or message us on WhatsApp: <a href="tel:+2348000000000">+234 800 000 0000</a></p>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2024 Your Business Name. All rights reserved.</p>
-    </div>
+  <footer>
+    <p>© 2024 MIKEE GADGET PLUG. All rights reserved.</p>
   </footer>
 </body>
 </html>
